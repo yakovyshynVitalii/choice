@@ -1,0 +1,43 @@
+.all-comments {
+  padding: 150px 0;
+}
+
+.all-comments .title-2 {
+  color: #3b2186;
+  text-align: center;
+}
+
+.comment-item {
+  padding: 30px;
+  margin: 30px 0;
+  background: #f7f4ff;
+  border: 1px solid #3b2186;
+  border-radius: 24px;
+}
+
+.comment-item .comment-body {
+  margin-top: 30px;
+}
+
+.comment-item .comment-btn {
+  margin-top: 30px;
+}
+
+.comment-item .comment-btn .secondary {
+  margin-top: 15px;
+}
+
+.add-comment-block {
+  padding: 30px;
+  background: #1e0c51;
+  border: 1px solid #1e0c51;
+  border-radius: 24px;
+}
+
+.add-comment-block .input-box {
+  margin: 15px 0;
+}
+
+.add-comment-block .title-3 {
+  color: white;
+}

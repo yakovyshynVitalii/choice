@@ -1,0 +1,147 @@
+.about-block {
+  padding-top: 70px;
+  padding-bottom: 250px;
+}
+
+.about-block .title-2 {
+  color: #2a2a38;
+}
+
+.about-block__top .text-box {
+  padding-top: 38px;
+  padding-left: 16px;
+}
+
+.about-block__top .text-box .text-3 {
+  padding-top: 15px;
+  color: #7f7f88;
+}
+
+.about-block__top .text-box a,
+.about-block__bottom .text-box a {
+  margin-top: 50px;
+}
+
+.about-block__top .text-box .button,
+.about-block__bottom .text-box .button {
+  padding: 14px 41px;
+  font-weight: 600;
+}
+
+.about-block__top .img-box {
+  display: flex;
+  justify-content: end;
+}
+
+.about-block__top .img-box img {
+  max-width: 514px;
+  max-height: 426px;
+  margin-right: 5px;
+}
+
+.about-block__bottom {
+  padding-top: 138px;
+}
+
+.about-block__bottom .img-box {
+  padding-left: 18px;
+}
+
+.about-block__bottom .img-box img {
+  max-width: 524px;
+  max-height: 457px;
+}
+
+.about-block__top .img-box img,
+.about-block__bottom .img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-block__bottom .text-box {
+  padding-top: 56px;
+  padding-left: 16px;
+}
+
+.about-block__bottom .text-box .text-3 {
+  padding-top: 17px;
+  color: #7f7f88;
+}
+
+/* --- tablet --- */
+
+@media screen and (max-width: 991px) {
+  .about-block__top {
+    flex-direction: column-reverse;
+  }
+
+  .about-block__top .img-box,
+  .about-block__bottom .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* --- mobile --- */
+
+@media screen and (max-width: 768px) {
+  .about-block {
+    padding-bottom: 100px;
+  }
+
+  .about-block .title-2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .about-block .text-3 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .about-block__top .text-box {
+    padding: 32px 16px 0 16px;
+  }
+
+  .about-block__top .img-box img {
+    max-width: 286px;
+    max-height: 236px;
+    margin-right: 0;
+  }
+
+  .about-block__bottom .img-box img {
+    max-width: 271px;
+    max-height: 240px;
+    margin-right: 0;
+  }
+
+  .about-block__bottom {
+    padding-top: 50px;
+  }
+
+  .about-block__top .text-box .text-3,
+  .about-block__bottom .text-box .text-3 {
+    padding-top: 24px;
+  }
+
+  .about-block__top .text-box a,
+  .about-block__bottom .text-box a {
+    display: block;
+    max-width: 320px;
+    width: 100%;
+
+    margin: 32px auto;
+  }
+
+  .about-block__top .text-box .button,
+  .about-block__bottom .text-box .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+  }
+}

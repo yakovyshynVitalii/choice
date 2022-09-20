@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+ul,
+p {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.--PC-remove {
+  display: none !important;
+}
+.--PC-visible {
+  display: block !important;
+}
+
+/* --- PC --- */
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1204px;
+    margin: 0 auto;
+  }
+}
+
+/* --- tablet --- */
+
+@media screen and (max-width: 991px) {
+  .--tablet-remove {
+    display: none !important;
+  }
+  .--tablet-visible {
+    display: block !important;
+  }
+}
+
+/* --- mobile --- */
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .--mobile-remove {
+    display: none !important;
+  }
+  .--mobile-visible {
+    display: block !important;
+  }
+}

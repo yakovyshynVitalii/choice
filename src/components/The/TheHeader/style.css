@@ -1,0 +1,304 @@
+.header {
+  position: absolute;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.header__logo-box {
+  padding-left: 5px;
+}
+
+.header__nav ul {
+  display: flex;
+
+  padding-left: 29px;
+  list-style: none;
+}
+
+.header__nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 25px;
+  font-weight: 600;
+}
+
+.header__nav ul li a {
+  position: relative;
+
+  color: #555560;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.-home-page .header__nav ul li a {
+  color: white;
+}
+
+.header__nav ul li a:after {
+  content: "";
+
+  position: absolute;
+  left: calc(50% - 8px);
+  top: calc(100% + 15px);
+
+  width: 16px;
+  height: 3px;
+  border-radius: 50px;
+  background: #3b2186;
+
+  transform: scaleX(0);
+  transition: 0.4s ease;
+}
+
+.-home-page .header__nav ul li a:after {
+  background: #f2cf7e;
+}
+
+.-home-page .header__btn-box .primary {
+  background: #6053b1;
+}
+
+.-home-page .header__btn-box .secondary svg,
+.-home-page .header__btn-box .secondary svg path {
+  fill: #3b2186;
+}
+
+.-home-page .header__btn-box .secondary p {
+  color: #3b2186;
+}
+
+.header__nav ul li .router-link-active:after {
+  transform: scaleX(1);
+}
+
+.header__btn-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding-right: 5px;
+}
+
+.header__btn-box .button:first-child {
+  width: 139px;
+  height: 52px;
+  margin-right: 16px;
+}
+
+.header__btn-box .button:nth-child(2) {
+  width: 147px;
+  height: 52px;
+}
+
+.header__btn-box .button svg {
+  width: 16px;
+  height: auto;
+  fill: white;
+}
+
+.header__btn-box .button svg path {
+  fill: white;
+}
+
+.header__btn-box .button p {
+  font-weight: 600;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-menu div {
+  width: 16px;
+  height: 2px;
+
+  border-radius: 50px;
+  margin-top: 4px;
+  background: black;
+
+  transition: 0.4s ease;
+}
+
+.-home-page .burger-menu div {
+  background-color: white;
+}
+
+.burger-menu div:first-child {
+  margin-top: 0;
+}
+.burger-menu.-active div {
+  margin: 0 0;
+}
+
+.burger-menu.-active div:nth-child(1) {
+  transform: rotate(45deg) translateY(2px);
+}
+
+.burger-menu.-active div:nth-child(2) {
+  transform: scaleX(0);
+}
+
+.burger-menu.-active div:nth-child(3) {
+  transform: rotate(-45deg) translateY(-2px);
+}
+
+/* --- hover --- */
+
+@media screen and (hover: hover) {
+  .header__nav ul li a:hover:after {
+    transform: scaleX(1);
+  }
+}
+
+/* --- tablet --- */
+
+@media screen and (max-width: 991px) {
+  .header {
+    display: flex;
+    align-items: center;
+
+    padding-top: 0;
+    height: 80px;
+    background: transparent;
+
+    transition: 0.4s ease;
+  }
+
+  .header.-active {
+    background: #3b2186;
+  }
+
+  .header__nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    padding: 0 0;
+    background: #3b2186;
+
+    transform: translateX(-100%);
+    transition: 0.4s;
+  }
+
+  .header__nav ul li a:after {
+    background: #f2cf7e;
+  }
+
+  .header__nav.-active {
+    transform: translateX(0);
+  }
+
+  .header__nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 21px 0 0 0;
+  }
+
+  .header__nav ul li {
+    width: 100%;
+    padding: 16px 0;
+    border-bottom: 1px solid #4a2f9b;
+  }
+
+  .header__nav ul li:last-child {
+    border: none;
+  }
+
+  .header__nav ul li a {
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .-home-page .header__btn-box .primary {
+    background: #3b2186;
+  }
+
+  .header__btn-box.-active .button {
+    background: white;
+  }
+
+  .header__btn-box.-active .button p {
+    color: black;
+  }
+
+  .header__btn-box.-active .button svg,
+  .header__btn-box.-active .button svg path {
+    fill: black;
+  }
+}
+
+/* --- mobile --- */
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 60px;
+  }
+
+  .header__btn-box {
+    padding: 0;
+    margin-right: -5px;
+  }
+
+  .header__logo-box img {
+    width: 120px;
+    height: 32px;
+
+    margin: 0;
+  }
+
+  .header__btn-box .button {
+    width: auto !important;
+    height: auto !important;
+    padding: 14px;
+  }
+
+  .header__btn-box .button:first-child {
+    margin-right: 13px;
+  }
+  .-home-page .header__btn-box .secondary svg,
+  .-home-page .header__btn-box .secondary svg path {
+    fill: white;
+  }
+
+  .-home-page .header__btn-box.-active .secondary svg,
+  .-home-page .header__btn-box.-active .secondary svg path {
+    fill: black;
+  }
+
+  .header__btn-box .button svg {
+    width: 14px;
+    height: 14px;
+    margin: 0;
+  }
+
+  .header__btn-box .button p {
+    display: none;
+  }
+
+  .-home-page .burger-menu div {
+    background: black;
+  }
+
+  .burger-menu.-active div {
+    background: white;
+  }
+}

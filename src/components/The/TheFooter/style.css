@@ -1,0 +1,145 @@
+.footer__top {
+  padding: 70px 0 84px 0;
+  background: #2b146c;
+  color: white;
+}
+
+.footer__top input {
+  color: white;
+}
+
+.footer__top .title-2 {
+  padding-left: 5px;
+  letter-spacing: 0;
+}
+
+.footer__top .text-1 {
+  max-width: 616px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.footer__top .button {
+  width: 100%;
+
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.footer__bottom {
+  padding: 118px 0 163px 0;
+  background: url("@/assets/images/footer-bg.svg"), #1e0c51;
+  background-repeat: no-repeat;
+  background-position: right;
+  color: white;
+}
+
+.footer__bottom .nav-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__bottom .nav-block {
+  padding-left: 18px;
+}
+
+.logo-box p {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.footer__bottom .nav-block:nth-child(2) {
+  padding-left: 53px;
+}
+
+.footer__bottom .nav-block a {
+  display: block;
+  width: fit-content;
+  margin-top: 24px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #ffffff;
+}
+
+.footer__bottom .nav-block a:first-child {
+  margin-top: 0;
+}
+
+.footer__bottom .button {
+  width: 100%;
+}
+
+.footer__bottom .input-box {
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer__top form {
+    margin-top: 24px !important;
+  }
+
+  .footer__bottom form {
+    margin-top: 49px !important;
+  }
+}
+
+/* --- tablet --- */
+
+@media screen and (max-width: 991px) {
+  .footer__top {
+    padding: 48px 0 50px 0;
+  }
+
+  .footer__top .title-2 {
+    padding-left: 0;
+  }
+
+  .footer__top .text-1 {
+    max-width: 100%;
+    padding-top: 5px;
+    padding-left: 0;
+  }
+
+  .footer__top form {
+    margin-top: 24px;
+  }
+
+  .footer__top .button {
+    padding: 10px 24px;
+    margin-top: 16px;
+  }
+
+  .footer__bottom {
+    padding: 48px 0 90px 0;
+  }
+
+  .footer-nav {
+    padding-top: 16px;
+  }
+
+  .footer__bottom {
+    background: url("@/assets/images/footer-bg-mob.svg"), #1e0c51;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+/* --- mobile --- */
+
+@media screen and (max-width: 768px) {
+  .footer__top .title-2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .footer__top .text-1 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
